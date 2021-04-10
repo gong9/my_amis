@@ -4,8 +4,13 @@ export interface PageProps {
 }
 
 const Page: React.SFC<PageProps> = (prop) => {
+    console.log(prop.children);
+
     return (
-        <div>page模板组件{prop.body}</div>
+        <div>
+            {prop.children ? prop.children : 'F'}
+            page模板组件{prop.body}
+        </div>
     );
 }
 

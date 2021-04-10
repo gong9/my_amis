@@ -15,12 +15,13 @@ const resolveRenderer = (path: string,
     if (schema) {
         name = schema.type
     }
+
     return {
         Renderer: findTemplate(path, schema as SchemaType),
         name: name
     }
-
 }
+
 class SchemaRenderer extends React.Component<SchemaRendererProps, SchemaRendererState> {
     constructor(props: SchemaRendererProps) {
         super(props)

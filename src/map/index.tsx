@@ -8,15 +8,24 @@ const map = {
     dialog
 }
 
+//简单代理
 const proxyTemplateHocProps = (Template: any, schema: SchemaType) => {
     let { type, body } = schema
-    
+
     return (
         <Template
             body={body}
         />
     )
 }
+
+//处理层级别
+
+
+
+
+
+
 
 const findTemplate = (path: string, schema: SchemaType) => {
     if (path in map) {
