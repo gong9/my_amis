@@ -8,7 +8,7 @@ const Page: React.SFC<PageProps> = (prop) => {
 
     return (
         <div>
-            {prop.children ? prop.children : 'F'}
+            {prop.children ? prop.children : ''}
             page模板组件{prop.body}
         </div>
     );

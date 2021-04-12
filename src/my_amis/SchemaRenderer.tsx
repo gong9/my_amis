@@ -9,7 +9,7 @@ export interface SchemaRendererState {
     Component: any
 }
 
-const resolveRenderer = (path: string,
+export const resolveRenderer = (path: string,
     schema?: SchemaType) => {
     let name;
     if (schema) {
