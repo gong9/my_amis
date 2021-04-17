@@ -7,15 +7,6 @@ const schema: SchemaType = {
   body: '这个是简单的amis'
 }
 
-// const schema02: SchemaType = {
-//   type: 'dialog',
-//   body: {
-//     type: 'action',
-//     label: '按钮',
-//     actiontype: 'log'
-//   }
-// }
-
 const jsx = amisRender(schema)
 const App = () => {
   return jsx

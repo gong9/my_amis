@@ -19,14 +19,6 @@ const proxyTemplateHocProps = (Template: any, schema: SchemaType) => {
     )
 }
 
-//处理层级别
-
-
-
-
-
-
-
 const findTemplate = (path: string, schema: SchemaType) => {
     if (path in map) {
         // @ts-ignore
